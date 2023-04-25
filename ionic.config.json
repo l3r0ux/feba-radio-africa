@@ -1,0 +1,7 @@
+{
+  "name": "feba_radio_sa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
