@@ -108,6 +108,7 @@ const radioTiles: Array<RadioTile> = [
   margin-top: 0;
   margin-bottom: 1.5rem;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+  color: #fff;
 }
 
 .main-container {

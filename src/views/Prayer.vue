@@ -24,7 +24,7 @@
                     </h3>
                 </div>
                 <div v-else class="loading-container">
-                    <ion-spinner name="lines"></ion-spinner>
+                    <ion-spinner class="loading-spinner" name="lines"></ion-spinner>
                 </div>
             </transition>
         </div>
@@ -135,6 +135,7 @@ const scrapePrayerData = (data: string) => {
 
 .prayer-page-container .prayer-container {
     transition: all 500ms ease;
+    color: #fff;
 }
 
 .prayer-container div {
@@ -170,9 +171,9 @@ const scrapePrayerData = (data: string) => {
     justify-content: center;
     width: 100%;
     height: 100%;
-    color: white;
     font-size: 1.5rem;
     font-weight: bold;
+    color: #fff;
 }
 
 .button {

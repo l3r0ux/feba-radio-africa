@@ -10,8 +10,8 @@
             <transition name="fade" mode="out-in">
                 <ion-spinner v-if="isLoading" class="loading-spinner" name="lines"></ion-spinner>
                 <template v-else>
-                    <ion-icon v-if="isPlaying" :icon="pause"></ion-icon>
-                    <ion-icon v-else-if="!hasError" :icon="play"></ion-icon>
+                    <ion-icon class="control-icon" v-if="isPlaying" :icon="pause"></ion-icon>
+                    <ion-icon class="control-icon" v-else-if="!hasError" :icon="play"></ion-icon>
                     <ion-icon v-else-if="hasError" color="warning" :icon="alertCircle"></ion-icon>
                 </template>
             </transition>
@@ -126,6 +126,10 @@ watchEffect(() => {
     min-height: 1.8rem;
 }
 
+.inner .control-icon {
+    color: #fff;
+}
+
 .disabled {
     height: 100%;
 }
@@ -135,6 +139,7 @@ watchEffect(() => {
     flex-direction: column;
     flex-wrap: wrap;
     filter: drop-shadow(1px 2px 2px black);
+    color: #fff;
 }
 
 .loading-spinner {
@@ -144,6 +149,7 @@ watchEffect(() => {
     bottom: 0;
     right: 0;
     margin: 0.3rem;
+    color: #fff;
 }
 
 .fade-enter-active,

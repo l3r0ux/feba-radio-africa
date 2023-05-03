@@ -110,6 +110,7 @@ onMounted(() => {
     overflow: auto;
     background: #0e1b2a url('/images/world_background.png') no-repeat fixed left / cover;
     height: 100%;
+    position: relative;
 }
 
 .logo-container {
@@ -156,7 +157,7 @@ onMounted(() => {
     width: 100%;
     position: relative;
     z-index: 5;
-    margin-top: 3.5rem;
+    margin-top: 1rem;
 }
 
 .ripple-parent {

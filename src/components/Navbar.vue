@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar">
-        <ion-icon size="large" @click="ionRouter.back()" :icon="arrowBack"></ion-icon>
+        <ion-icon class="back-arrow" size="large" @click="ionRouter.back()" :icon="arrowBack"></ion-icon>
         <h1>{{ heading }}</h1>
     </nav>
 </template>
@@ -31,10 +31,15 @@ const ionRouter = useIonRouter()
     background-color: #0c2566;
 }
 
+.navbar .back-arrow {
+    color: #fff;
+}
+
 .navbar h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+    color: #fff;
 }
 </style>
