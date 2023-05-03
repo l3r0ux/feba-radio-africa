@@ -11,7 +11,17 @@ const routes: Array<RouteRecordRaw> = [
     path: '/home',
     name: 'Home',
     component: HomePage
-  }
+  },
+  {
+    path: '/prayer',
+    name: 'Prayer',
+    component: () => import('../views/Prayer.vue'),
+  },
+  {
+    path: '/live-radio',
+    name: 'LiveRadio',
+    component: () => import('../views/LiveRadio.vue'),
+  },
 ]
 
 const router = createRouter({

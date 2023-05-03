@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "799233853329",
+    "project_id": "feba-radio-sa-8b0a2",
+    "storage_bucket": "feba-radio-sa-8b0a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799233853329:android:414cf5febc2d8da547fc30",
+        "android_client_info": {
+          "package_name": "com.FEBA.FebaRadio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799233853329-km5miumdnib663290i0eeil8g6k99ibs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHwzaN9BGaeoALnp5OP7pkXupMr5hvjfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799233853329-km5miumdnib663290i0eeil8g6k99ibs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
