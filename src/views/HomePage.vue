@@ -157,7 +157,6 @@ onMounted(() => {
     width: 100%;
     position: relative;
     z-index: 5;
-    margin-top: 1rem;
 }
 
 .ripple-parent {
@@ -209,5 +208,14 @@ ion-button {
     border: 3px solid #0c2566;
     border-radius: 100vw;
     opacity: 0;
+}
+
+@media screen and (min-height: 708px) {
+    .main-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 </style>
