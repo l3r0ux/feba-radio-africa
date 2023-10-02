@@ -58,11 +58,13 @@ onMounted(async () => {
 
 const getDailyPrayer = async () => {
     isLoading.value = true
+
     const currentDate = new Date()
     const date = currentDate.getDate() < 10 ? `0${currentDate.getDate()}` : currentDate.getDate()
     const month = currentDate.getMonth() + 1 < 10 ? `0${currentDate.getMonth() + 1}` : currentDate.getMonth() + 1
-    const engQuery = `pray_${date}-${month}/`
-    const afrQuery = `bid_${date}-${month}/`
+    const year = currentDate.getFullYear()
+    const engQuery = `pray_${date}-${month}-${year}/`
+    const afrQuery = `bid_${date}-${month}-${year}/`
 
     try {
         const engRes = await axios.get(`https://febaradio.co.za/events/event/${engQuery}`)
